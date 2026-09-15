@@ -20,7 +20,7 @@ def create_order(e):
        grandtotal = subtotal + price
        display(grandtotal, target="output2")
 
-       subtotal = (float(prod1.value) * prod1.checked +                        float(prod2.value) * prod2.checked +                        #continue here)Create  a variable for tax rateCreate a variable that gets the product of subtotal and taxrateCreate a variable for the grandtotal
+       subtotal = (float(prod1.value) * prod1.checked +                        float(prod2.value) * prod2.checked +        #continue here)Create  a variable for tax rateCreate a variable that gets the product of subtotal and taxrateCreate a variable for the grandtotal
        
 
 def place_order(e):
