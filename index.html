@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q1 Practice 3</title>
+    <title>Q1 Skills Test</title>
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
-
-    <!--
-        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
-        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
-        
-        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
-        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-    -->
+    
 </head>
+ <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            background-color: #ffff;
+            margin: 10px;
+            padding: 50px;
+            text-align: center;
+            
+        }
+        h1 {
+            color: #123094;
+            font-size: 36px;
+            text-align: center;
+
+        }   
+
+        h3 {
+            color: #123094;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        
+    </style>
 <body>
-    <h1>Python Numbers</h1>
+        <h1>THE MONTESSORIAN CAFÉ</h1>
     <br>
     <form>
+        <h3>Welcome to the Montessorian Café! Please select your order below:</h3>
         <input type="text" id="input1" placeholder="Enter a number">
         <br>
         <input type="text" id="input2" placeholder="Enter a number">
@@ -28,8 +46,20 @@
         <br>
         <label for="choose">Choose:</label>
         <br>
-        <input type="checkbox" id="item1" value=129>
+        <input type="checkbox" id="item1" value=149>
         <label for="item1">Pumpkin Spice Latte</label>
+        <br>
+         <input type="checkbox" id="item2" value=122>
+        <label for="item2">Americano</label>
+        <br>
+         <input type="checkbox" id="item3" value=134>
+        <label for="item3">Matcha Latte</label>
+        <br>
+          <input type="checkbox" id="item4" value=120>
+        <label for="item4">Spanish Latte</label>
+        <br>
+          <input type="checkbox" id="item5" value=119>
+        <label for="item5">Cappuccino</label>
         <br>
         <label for="choose">Choose:</label>
         <br>
@@ -43,13 +73,7 @@
          <button type="button" py-click="create_order">Create Order</button>
          <br>
          <br>
-         <label for="options">Select Coffee</label>
-         <br>
-         <select id="coffee">
-             <option value="0">Choose an option</option>
-             <option value="99">Americano</option>
-             <option value="129">Cappuccino</option>
-             <option value="159">Spanish Latte</option>
+        
               
 
          </select>
