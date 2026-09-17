@@ -19,13 +19,7 @@ def create_order(e):
        tax=subtotal * taxrate  #the product of subtotal and taxrate
        grandtotal = subtotal + tax + price
        display(f"|Subtotal: ₱{subtotal} |Tax: ₱{tax} |Grand Total: ₱{grandtotal}", target="output2")
-
-
        
-
-       
-       
-
 def place_order(e):
        document.getElementById("output3").innerHTML ="" #clears previous result
 
