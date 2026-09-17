@@ -7,81 +7,108 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
     
-</head>
- <style>
+     <style>
         body {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
-            background-color: #ffff;
+            background-color: #000052;
             margin: 10px;
             padding: 50px;
             text-align: center;
             
         }
+        form {
+            background-color: #1e1e89;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            height: 400px;
+            width: 400px;
+         
+        }
         h1 {
-            color: #123094;
+            color: #dab120;
             font-size: 36px;
             text-align: center;
 
         }   
 
         h3 {
-            color: #123094;
+            color:#dab120;
             font-size: 24px;
             text-align: center;
         }
+
+        label {
+            color: #dab120;
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        button {
+            background-color: #dab120;
+            color: #000052;
+            font-size: 18px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
         
+        #output1, #output2, #output3, #output4 {
+            color: #dab120;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .order-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
         
     </style>
+
+</head>
+
 <body>
         <h1>THE MONTESSORIAN CAFÉ</h1>
     <br>
     <form>
         <h3>Welcome to the Montessorian Café! Please select your order below:</h3>
-        <input type="text" id="input1" placeholder="Enter a number">
-        <br>
-        <input type="text" id="input2" placeholder="Enter a number">
-        <br>
-        <button type="button" py-click="add_num">Solve</button>
-        <br>
         <br>
         <label for="choose">Choose:</label>
         <br>
-        <input type="checkbox" id="item1" value=149>
+        <input type="checkbox" id="item1" value=150>
         <label for="item1">Pumpkin Spice Latte</label>
         <br>
-         <input type="checkbox" id="item2" value=122>
+        <input type="checkbox" id="item2" value=120>
         <label for="item2">Americano</label>
         <br>
          <input type="checkbox" id="item3" value=134>
         <label for="item3">Matcha Latte</label>
         <br>
-          <input type="checkbox" id="item4" value=120>
+          <input type="checkbox" id="item4" value=125>
         <label for="item4">Spanish Latte</label>
         <br>
-          <input type="checkbox" id="item5" value=119>
+          <input type="checkbox" id="item5" value=90>
         <label for="item5">Cappuccino</label>
         <br>
-        <label for="choose">Choose:</label>
+        <select id="extra">
+            <option value="">Choose your size</option>
+            <option value="5">Regular</option>
+            <option value="29">Medium</option>
+            <option value="59">Large</option>
+            <option value="105">Extra Large</option>
+        </select>
         <br>
-        <input type="radio" id="item2" value=0 name="size">
-        <label for="regular">Regular (Php +0)</label>
-        <br>
-        <input type="radio" id="upsize" value="30" name="size">
-        <label for ="upsize">Upsize(Php +30)</label>
-        <br>
-        <br>
+        <div class="order-buttons">
          <button type="button" py-click="create_order">Create Order</button>
          <br>
-         <br>
-        
-              
-
-         </select>
-         <br>
-         
          <button type="button" py-click="place_order">Place Order</button>
          <br>
-
+         </div>
          <br>
          <button type="button" py-click="show_order">Show Order</button>
          <br>
