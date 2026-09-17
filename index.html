@@ -79,7 +79,7 @@
     <form>
         <h3>Welcome to the Montessorian Café! Please select your order below:</h3>
         <br>
-        <label for="choose">Choose:</label>
+        <label for="choose">MENU:</label>
         <br>
         <input type="checkbox" id="item1" value=150>
         <label for="item1">Pumpkin Spice Latte</label>
@@ -96,13 +96,15 @@
           <input type="checkbox" id="item5" value=90>
         <label for="item5">Cappuccino</label>
         <br>
+        <br>
         <select id="extra">
             <option value="">Choose your size</option>
-            <option value="5">Regular</option>
-            <option value="29">Medium</option>
-            <option value="59">Large</option>
-            <option value="105">Extra Large</option>
+            <option value="5">Regular(+5)</option>
+            <option value="29">Medium(+29)</option>
+            <option value="59">Large(+59)</option>
+            <option value="105">Extra Large(+105)</option>
         </select>
+        <br>
         <br>
         <div class="order-buttons">
          <button type="button" py-click="create_order">Create Order</button>
