@@ -23,7 +23,7 @@ def create_order(e):
 def place_order(e):
        document.getElementById("output3").innerHTML ="" #clears previous result
 
-       display(f"Order placed successfully!", target="output3") #display initial price
+       display(f"Order placed successfully!", target="output3") #display order placed successfully message
 
 def show_order(e):
        document.getElementById("output4").innerHTML = "" # clears previous result
@@ -37,11 +37,7 @@ def show_order(e):
        size = document.getElementById("extra")
        price = float(size.value)
 
-       subtotal = (float(prod1.value) * prod1.checked +
-                float(prod2.value) * prod2.checked +
-                float(prod3.value) * prod3.checked +
-                float(prod4.value) * prod4.checked +
-                float(prod5.value) * prod5.checked)
+       subtotal = (float(prod1.value) * prod1.checked +float(prod2.value) * prod2.checked +float(prod3.value) * prod3.checked +float(prod4.value) * prod4.checked +float(prod5.value) * prod5.checked)
 
        tax = subtotal * 0.12
 
